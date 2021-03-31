@@ -1,22 +1,150 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--设置width或height为0dp的方式实现-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:id="@+id/LinearLayout1"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:orientation="horizontal">-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="fill_parent"-->
+<!--        android:background="#ADFF2F"-->
+<!--        android:layout_weight="1"/>-->
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="fill_parent"-->
+<!--        android:background="#DA70D6"-->
+<!--        android:layout_weight="2"/>-->
+
+<!--</LinearLayout>-->
+
+
+<!--通过将weight设置为wrap_content的方式实现-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:id="@+id/LinearLayout1"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:orientation="horizontal" >-->
+
+<!--    <TextView-->
+<!--        android:layout_weight="1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="fill_parent"-->
+<!--        android:text="one"-->
+<!--        android:background="#98FB98"-->
+<!--        />-->
+<!--    <TextView-->
+<!--        android:layout_weight="2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="fill_parent"-->
+<!--        android:text="two"-->
+<!--        android:background="#FFFF00"-->
+<!--        />-->
+<!--    <TextView-->
+<!--        android:layout_weight="3"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="fill_parent"-->
+<!--        android:text="three"-->
+<!--        android:background="#FF00FF"-->
+<!--        />-->
+
+<!--</LinearLayout>-->
+
+<!--通过将weight设置为match_parent的方式实现-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:id="@+id/LinearLayout1"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent" >-->
+
+<!--    <TextView-->
+<!--        android:layout_weight="2"-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="fill_parent"-->
+<!--        android:text="one"-->
+<!--        android:background="#98FB98"-->
+<!--        />-->
+<!--    <TextView-->
+<!--        android:layout_weight="3"-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="fill_parent"-->
+<!--        android:text="two"-->
+<!--        android:background="#FFFF00"-->
+<!--        />-->
+<!--    <TextView-->
+<!--        android:layout_weight="4"-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="fill_parent"-->
+<!--        android:text="three"-->
+<!--        android:background="#FF00FF"-->
+<!--        />-->
+
+<!--</LinearLayout>-->
+
+<!--使用一个view实现一条线的效果-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:id="@+id/LinearLayout1"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent" >-->
+
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="1px"-->
+<!--        android:background="#000000" />-->
+<!--</LinearLayout>-->
+
+<!--设置layout_gravity=left-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:orientation="horizontal">-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:layout_gravity="left"-->
+<!--        android:background="#FF7878"-->
+<!--        android:gravity="center"-->
+<!--        android:text="O(∩_∩)O哈哈~" />-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:layout_gravity="right"-->
+<!--        android:background="#FF7428"-->
+<!--        android:gravity="center"-->
+<!--        android:text="(*^__^*) 嘻嘻……" />-->
+
+<!--</LinearLayout>-->
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/LinearLayout1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    android:gravity="left">
 
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="fill_parent"
-        android:background="#ADFF2F"
-        android:layout_weight="1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:background="#FF7878"
+        android:gravity="center"
+        android:text="O(∩_∩)O哈哈~" />
 
-
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="fill_parent"
-        android:background="#DA70D6"
-        android:layout_weight="1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_gravity="right"
+        android:background="#FF7428"
+        android:gravity="center"
+        android:text="(*^__^*) 嘻嘻……" />
 
 </LinearLayout>
